@@ -1,0 +1,27 @@
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+  "name": "Laptop",
+  "description": "Gaming Laptop",
+  "price": 4500,
+  "quantity": 3
+}
+
+###
+GET http://localhost:8080/api/products
+
+###
+PUT http://localhost:8080/api/products/1
+Content-Type: application/json
+
+{
+  "name": "Laptop Updated",
+  "description": "Gaming Laptop RTX",
+  "price": 5000,
+  "quantity": 5
+}
+
+###
+DELETE http://localhost:8080/api/products/1
+
